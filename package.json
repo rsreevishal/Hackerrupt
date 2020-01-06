@@ -1,0 +1,14 @@
+{
+  "name": "hackerrupt-2",
+  "version": "1.0.0",
+  "description": "the first ever hackathon by ACE",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "SREE VISHAL R",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}

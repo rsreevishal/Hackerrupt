@@ -1,0 +1,12 @@
+.timer-digit {
+  color: red;
+  font-weight: bold;
+  font-family: 'Aldrich';
+}
+
+.form-control {
+  border: 2px solid red;
+  color: red;
+  background-color: black;
+}
+
