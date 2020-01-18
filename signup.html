@@ -5,31 +5,28 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <title>Hackerrupt</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Aldrich">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Bangers">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cookie">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Overpass+Mono">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.1.1/aos.css">
-    <link rel="stylesheet" href="assets/css/Pretty-Footer.css">
-    <link rel="stylesheet" href="assets/css/styles.css">
-    <link rel="stylesheet" href="assets/css/Team-Boxed.css">
-    <link rel="stylesheet" href="assets/css/timer.css">
+    <link rel="stylesheet" href="assets/css/styles.min.css">
 </head>
 
 <body style="background-color: rgb(41,44,47);">
     <nav class="navbar navbar-light navbar-expand-md bg-dark">
-        <div class="container-fluid"><a class="navbar-brand" href="index.html" style="font-family: 'Overpass Mono', monospace;color: #ffffff;font-size: 30px;"><i class="fa fa-code" style="color: rgb(255,0,0);"></i>&nbsp;Hackerrupt</a><button class="navbar-toggler" data-toggle="collapse"
+        <div class="container-fluid"><a class="navbar-brand" style="font-family: 'Overpass Mono', monospace;color: #ffffff;font-size: 30px;" href="index.html"><i class="fa fa-code" style="color: rgb(255,0,0);"></i>&nbsp;Hackerrupt</a><button data-toggle="collapse" class="navbar-toggler"
                 data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
             <div class="collapse navbar-collapse d-md-flex d-lg-flex justify-content-md-end justify-content-lg-end" id="navcol-1" style="font-family: Aldrich, sans-serif;">
                 <ul class="nav navbar-nav">
-                    <li class="nav-item" role="presentation"><a class="nav-link" href="index.html" style="color: #ffffff;">Home</a></li>
-                    <li class="nav-item" role="presentation"><a class="nav-link active text-light" href="signin.html">Sign in</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link" style="color: #ffffff;" href="index.html">Home</a></li>
+                    <li class="nav-item" role="presentation"></li>
                     <li class="nav-item" role="presentation"><a class="nav-link text-light" href="register.html">Register</a></li>
-                    <li class="nav-item" role="presentation"><a class="nav-link" href="domain.html" style="color: #ffffff;">Domain</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link" style="color: #ffffff;" href="domain.html">Domain</a></li>
                     <li class="nav-item" role="presentation"><a class="nav-link text-light" href="aboutACE.html">About ACE</a></li>
                     <li class="nav-item" role="presentation"><a class="nav-link text-light" href="contactus.html">Contact us</a></li>
                 </ul>
@@ -37,47 +34,47 @@
         </div>
     </nav>
     <div class="container">
-        <form class="text-center" method="post" style="font-family: Aldrich, sans-serif;">
+        <form class="text-center" style="font-family: Aldrich, sans-serif;" method="post">
             <h1 style="color: rgb(255,0,0);">Sign up</h1>
             <div class="form-row">
                 <div class="col">
-                    <div class="form-group"><input class="form-control" type="text" name="name" required="" maxlength="20" minlength="3" autocomplete="on" placeholder="Full Name"></div>
+                    <div class="form-group"><input class="form-control" type="text" placeholder="Full Name" name="name" required="" minlength="3" maxlength="20" autocomplete="on"></div>
                 </div>
                 <div class="col">
-                    <div class="form-group"><input class="form-control" type="text" name="mobile" required="" placeholder="Mobile Number" maxlength="15" minlength="10" pattern="(7|8|9)\d{9}"></div>
+                    <div class="form-group"><input class="form-control" type="text" name="mobile" required="" placeholder="Mobile Number" minlength="10" maxlength="15" pattern="(7|8|9)\d{9}"></div>
                 </div>
             </div>
             <div class="form-row">
                 <div class="col">
-                    <div class="form-group"><input class="form-control" type="email" name="email" required="" maxlength="30" minlength="10" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2, 4}$" placeholder="Email"></div>
+                    <div class="form-group"><input class="form-control" type="email" placeholder="Email" name="email" required="" minlength="10" maxlength="30" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2, 4}$"></div>
                 </div>
                 <div class="col">
-                    <div class="form-group"><input class="form-control" type="number" name="year" required="" placeholder="Year"></div>
+                    <div class="form-group"><input class="form-control" type="number" placeholder="Year" name="year" required=""></div>
                 </div>
             </div>
             <div class="form-row">
                 <div class="col">
-                    <div class="form-group"><input class="form-control" type="text" name="college" required="" maxlength="30" minlength="3" placeholder="College"></div>
+                    <div class="form-group"><input class="form-control" type="text" placeholder="College" name="college" required="" minlength="3" maxlength="30"></div>
                 </div>
                 <div class="col">
-                    <div class="form-group"><input class="form-control" type="text" name="department" required="" maxlength="20" minlength="2" placeholder="Department"></div>
+                    <div class="form-group"><input class="form-control" type="text" placeholder="Department" name="department" required="" minlength="2" maxlength="20"></div>
                 </div>
             </div>
             <div class="form-row">
                 <div class="col">
-                    <div class="form-group"><input class="form-control" type="password" name="password" required="" maxlength="20" minlength="8" placeholder="Password"></div>
+                    <div class="form-group"><input class="form-control" type="password" placeholder="Password" name="password" required="" minlength="8" maxlength="20"></div>
                 </div>
                 <div class="col">
-                    <div class="form-group"><input class="form-control" type="password" name="cpassword" required="" maxlength="20" minlength="8" placeholder="Confirm Password"></div>
+                    <div class="form-group"><input class="form-control" type="password" placeholder="Confirm Password" name="cpassword" required="" minlength="8" maxlength="20"></div>
                 </div>
             </div>
             <div class="form-row">
                 <div class="col">
-                    <div class="form-group"><a href="signin.html" style="color: rgb(255,15,0);">Already registered? Sign in</a></div>
+                    <div class="form-group"><a style="color: rgb(255,15,0);" href="signin.html">Already registered? Sign in</a></div>
                 </div>
             </div>
             <div class="form-row">
-                <div class="col"><button class="btn btn-primary" type="submit" style="border: 2px solid red;color: red;background-color: rgba(0,0,0,0);">Register</button></div>
+                <div class="col"><button class="btn btn-primary" style="border: 2px solid red;color: red;background-color: rgba(0,0,0,0);" type="submit">Register</button></div>
             </div>
         </form>
     </div>
@@ -91,13 +88,15 @@
         </ul>
         <p class="copyright" style="font-size: 20px;">Hackerrupt © 2020</p>
     </footer>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
-    <script src="assets/js/bs-animation.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.1.1/aos.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-analytics.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.7.0/firebase-firestore.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/rxjs/6.5.3/rxjs.umd.min.js"></script>
-    <script src="assets/js/register.js"></script>
-    <script src="assets/js/timer.js"></script>
+    <script src="assets/js/script.min.js"></script>
 </body>
 
 </html>
