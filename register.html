@@ -15,146 +15,162 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.1.1/aos.css">
     <link rel="stylesheet" href="assets/css/styles.min.css">
+    <style>
+        #main-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        min-height: 100vh;
+    }
+    footer a {
+        color: #cbd3da;
+    }
+    .social {
+        margin-bottom: 10px;
+    }
+    </style>
 </head>
 
 <body style="background-color: rgb(255,255,255);color: rgb(0,0,0);">
-    <nav class="navbar navbar-dark navbar-expand-md bg-dark">
-        <div class="container-fluid"><a class="navbar-brand" style="font-family: 'Overpass Mono', monospace;color: #ffffff;font-size: 30px;" href="index.html"><i class="fa fa-code" style="color: rgb(255,0,0);"></i>&nbsp;Hackerrupt</a><button data-toggle="collapse" class="navbar-toggler"
-                data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
-            <div class="collapse navbar-collapse d-md-flex d-lg-flex justify-content-md-end justify-content-lg-end" id="navcol-1" style="font-family: Aldrich, sans-serif;">
-                <ul class="nav navbar-nav">
-                    <li class="nav-item" role="presentation"><a class="nav-link" style="color: #ffffff;" href="index.html">Home</a></li>
-                    <li class="nav-item" role="presentation"></li>
-                    <li class="nav-item" role="presentation"><a class="nav-link text-light" href="register.html">Register</a></li>
-                    <li class="nav-item" role="presentation"><a class="nav-link" style="color: #ffffff;" href="domain.html">Domain</a></li>
-                    <li class="nav-item" role="presentation"><a class="nav-link text-light" href="aboutACE.html">About ACE</a></li>
-                    <li class="nav-item" role="presentation"><a class="nav-link text-light" href="contactus.html">Contact us</a></li>
-                </ul>
+    <div id="main-container">
+        <nav class="navbar navbar-dark navbar-expand-md bg-dark">
+            <div class="container-fluid"><a class="navbar-brand" style="font-family: 'Overpass Mono', monospace;color: #ffffff;font-size: 30px;" href="index.html"><i class="fa fa-code" style="color: rgb(255,0,0);"></i>&nbsp;Hackerrupt</a><button data-toggle="collapse" class="navbar-toggler"
+                    data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse d-md-flex d-lg-flex justify-content-md-end justify-content-lg-end" id="navcol-1" style="font-family: Aldrich, sans-serif;">
+                    <ul class="nav navbar-nav">
+                        <li class="nav-item" role="presentation"><a class="nav-link" style="color: #ffffff;" href="index.html">Home</a></li>
+                        <li class="nav-item" role="presentation"></li>
+                        <li class="nav-item" role="presentation"><a class="nav-link text-light" href="register.html">Register</a></li>
+                        <li class="nav-item" role="presentation"><a class="nav-link" style="color: #ffffff;" href="domain.html">Domain</a></li>
+                        <li class="nav-item" role="presentation"><a class="nav-link text-light" href="aboutACE.html">About ACE</a></li>
+                        <li class="nav-item" role="presentation"><a class="nav-link text-light" href="contactus.html">Contact us</a></li>
+                    </ul>
+                </div>
             </div>
-        </div>
-    </nav>
-    <section class="text-center" style="padding: 10px;font-family: Aldrich, sans-serif;color: red;background-color: rgba(255,255,255,0);">
-        <h1 style="color: rgb(255,0,0);">Registration</h1>
-        <form id="myForm" action="#">
-            <section id="t1">
-                <h3 style="color: rgb(0,0,0);">Team Leader</h3><small>Note: * fields are required</small>
-                <div class="form-row">
-                    <div class="col">
-                        <div class="form-group"><input class="form-control" type="text" style="background-color: rgb(255,255,255);" name="name" required="" placeholder="*Full Name" minlength="3" maxlength="20" autocomplete="on"></div>
+        </nav>
+        <section class="text-center" style="padding: 25px 10px; font-family: Aldrich, sans-serif;color: red;background-color: rgba(255,255,255,0);">
+            <h1 style="color: rgb(255,0,0);">Registration</h1>
+            <form id="myForm" action="#">
+                <section id="t1">
+                    <h3 style="color: rgb(0,0,0);">Team Leader</h3><small>Note: * fields are required</small>
+                    <div class="form-row">
+                        <div class="col">
+                            <div class="form-group"><input class="form-control" type="text" style="background-color: rgb(255,255,255);" name="name" required="" placeholder="*Full Name" minlength="3" maxlength="20" autocomplete="on"></div>
+                        </div>
+                        <div class="col">
+                            <div class="form-group"><input class="form-control" type="email" style="background-color: rgb(255,255,255);" name="email" required="" placeholder="*Email" minlength="5" maxlength="30" autocomplete="on" inputmode="email"></div>
+                        </div>
                     </div>
-                    <div class="col">
-                        <div class="form-group"><input class="form-control" type="email" style="background-color: rgb(255,255,255);" name="email" required="" placeholder="*Email" minlength="5" maxlength="30" autocomplete="on" inputmode="email"></div>
+                    <div class="form-row">
+                        <div class="col">
+                            <div class="form-group"><input class="form-control" type="text" id="mobile" style="background-color: rgb(255,255,255);" name="mobile" required="" placeholder="*Mobile" minlength="10" maxlength="15" pattern="(7|8|9)\d{9}" autocomplete="on" inputmode="tel"></div>
+                        </div>
+                        <div class="col">
+                            <div class="form-group"><input class="form-control" type="text" style="background-color: rgb(255,255,255);" name="college" required="" placeholder="*College" minlength="10" maxlength="30" autocomplete="on"></div>
+                        </div>
                     </div>
-                </div>
-                <div class="form-row">
-                    <div class="col">
-                        <div class="form-group"><input class="form-control" type="text" id="mobile" style="background-color: rgb(255,255,255);" name="mobile" required="" placeholder="*Mobile" minlength="10" maxlength="15" pattern="(7|8|9)\d{9}" autocomplete="on" inputmode="tel"></div>
+                    <div class="form-row">
+                        <div class="col">
+                            <div class="form-group"><input class="form-control" type="number" id="team_no" style="background-color: rgb(255,255,255);" name="team_no" required="" placeholder="*Number of team members" min="1" max="4" step="1"></div>
+                        </div>
+                        <div class="col">
+                            <div class="form-group"><input class="form-control" type="text" style="background-color: rgb(255,255,255);" name="team_name" required="" placeholder="*Team Name" minlength="3" maxlength="20" autocomplete="on"></div>
+                        </div>
                     </div>
-                    <div class="col">
-                        <div class="form-group"><input class="form-control" type="text" style="background-color: rgb(255,255,255);" name="college" required="" placeholder="*College" minlength="10" maxlength="30" autocomplete="on"></div>
+                    <div class="form-row">
+                        <div class="col">
+                            <div class="form-group d-md-flex align-items-md-end"><select class="form-control" style="background-color: rgb(255,255,255);" name="domain" required=""><optgroup label="*Domain"><option value="finance" selected="">Financial tech &amp; security</option><option value="education">Education</option><option value="STC">Smart transportation &amp; communication</option><option value="health">Health care</option><option value="eco">Eco friendly support &amp; rural development</option></optgroup></select></div>
+                        </div>
+                        <div class="col">
+                            <div class="form-group"><input class="form-control" type="text" id="ab_link" style="background-color: rgb(255,255,255);" name="driver_link" placeholder="Abstract link (optional)" minlength="10" maxlength="50" autocomplete="on" inputmode="url"><a class="btn btn-primary"
+                                    role="button" style="border: none;background-color: rgb(255,255,255);color: red;margin: 3px;font-size: 13px;" href="https://www.youtube.com/watch?v=Itn3WIhQ6NQ">Learn more</a></div>
+                        </div>
                     </div>
-                </div>
-                <div class="form-row">
-                    <div class="col">
-                        <div class="form-group"><input class="form-control" type="number" id="team_no" style="background-color: rgb(255,255,255);" name="team_no" required="" placeholder="*Number of team members" min="1" max="4" step="1"></div>
+                    <div class="form-row">
+                        <div class="col">
+                            <div class="form-group"><textarea class="form-control form-control-lg" style="background-color: rgb(255,255,255);" name="abstract" required="" placeholder="*Your idea or project summary" minlength="100" maxlength="500" autocomplete="on"></textarea></div>
+                        </div>
                     </div>
-                    <div class="col">
-                        <div class="form-group"><input class="form-control" type="text" style="background-color: rgb(255,255,255);" name="team_name" required="" placeholder="*Team Name" minlength="3" maxlength="20" autocomplete="on"></div>
+                    <div class="form-row">
+                        <div class="col">
+                            <div class="form-group"><input class="form-control" type="password" id="pass" style="background-color: rgb(255,255,255);" name="password" required="" placeholder="*Password" minlength="8" maxlength="20"></div>
+                        </div>
+                        <div class="col">
+                            <div class="form-group"><input class="form-control" type="password" id="cpass" style="background-color: rgb(255,255,255);" name="cpass" required="" placeholder="*Confirm password" minlength="8" maxlength="20"></div>
+                        </div>
+                        <div class="col"><small id="message" style="font-size: 20px;"></small></div>
                     </div>
-                </div>
-                <div class="form-row">
-                    <div class="col">
-                        <div class="form-group d-md-flex align-items-md-end"><select class="form-control" style="background-color: rgb(255,255,255);" name="domain" required=""><optgroup label="*Domain"><option value="finance" selected="">Financial tech &amp; security</option><option value="education">Education</option><option value="STC">Smart transportation &amp; communication</option><option value="health">Health care</option><option value="eco">Eco friendly support &amp; rural development</option></optgroup></select></div>
+                </section>
+                <section class="rubberBand animated" id="t2">
+                    <h3 style="color: rgb(0,0,0);">Team member 2</h3>
+                    <div class="form-row">
+                        <div class="col">
+                            <div class="form-group"><input class="form-control" type="text" style="background-color: rgb(255,255,255);" name="name2" required="" placeholder="*Full Name" minlength="3" maxlength="20" autocomplete="on"></div>
+                        </div>
+                        <div class="col">
+                            <div class="form-group"><input class="form-control" type="email" style="background-color: rgb(255,255,255);" name="email2" required="" placeholder="*Email" minlength="15" maxlength="30" autocomplete="on" inputmode="email"></div>
+                        </div>
                     </div>
-                    <div class="col">
-                        <div class="form-group"><input class="form-control" type="text" id="ab_link" style="background-color: rgb(255,255,255);" name="driver_link" placeholder="Abstract link (optional)" minlength="10" maxlength="50" autocomplete="on" inputmode="url"><a class="btn btn-primary"
-                                role="button" style="border: 2px solid red;background-color: rgb(255,255,255);color: red;margin: 3px;font-size: 13px;" href="https://www.youtube.com/watch?v=Itn3WIhQ6NQ">Learn more</a></div>
+                    <div class="form-row">
+                        <div class="col">
+                            <div class="form-group"><input class="form-control" type="text" style="background-color: rgb(255,255,255);" name="mobile2" required="" placeholder="*Mobile" minlength="10" maxlength="15" pattern="(7|8|9)\d{9}" autocomplete="on"></div>
+                        </div>
+                        <div class="col">
+                            <div class="form-group"><input class="form-control" type="text" style="background-color: rgb(255,255,255);" name="college2" required="" placeholder="*College" minlength="10" maxlength="30" autocomplete="on"></div>
+                        </div>
                     </div>
-                </div>
-                <div class="form-row">
-                    <div class="col">
-                        <div class="form-group"><textarea class="form-control form-control-lg" style="background-color: rgb(255,255,255);" name="abstract" required="" placeholder="*Your idea or project summary" minlength="100" maxlength="500" autocomplete="on"></textarea></div>
+                </section>
+                <section class="rubberBand animated" id="t3">
+                    <h3 style="color: rgb(0,0,0);">Team member 3</h3>
+                    <div class="form-row">
+                        <div class="col">
+                            <div class="form-group"><input class="form-control" type="text" style="background-color: rgb(255,255,255);" name="name3" required="" placeholder="*Full Name" minlength="3" maxlength="20" autocomplete="on"></div>
+                        </div>
+                        <div class="col">
+                            <div class="form-group"><input class="form-control" type="email" style="background-color: rgb(255,255,255);" name="email3" required="" placeholder="*Email" minlength="15" maxlength="30" autocomplete="on" inputmode="email"></div>
+                        </div>
                     </div>
-                </div>
-                <div class="form-row">
-                    <div class="col">
-                        <div class="form-group"><input class="form-control" type="password" id="pass" style="background-color: rgb(255,255,255);" name="password" required="" placeholder="*Password" minlength="8" maxlength="20"></div>
+                    <div class="form-row">
+                        <div class="col">
+                            <div class="form-group"><input class="form-control" type="text" style="background-color: rgb(255,255,255);" name="mobile3" required="" placeholder="*Mobile" minlength="10" maxlength="15" pattern="(7|8|9)\d{9}" autocomplete="on"></div>
+                        </div>
+                        <div class="col">
+                            <div class="form-group"><input class="form-control" type="text" style="background-color: rgb(255,255,255);" name="college3" required="" placeholder="*College" minlength="10" maxlength="30" autocomplete="on"></div>
+                        </div>
                     </div>
-                    <div class="col">
-                        <div class="form-group"><input class="form-control" type="password" id="cpass" style="background-color: rgb(255,255,255);" name="cpass" required="" placeholder="*Confirm password" minlength="8" maxlength="20"></div>
+                </section>
+                <section class="rubberBand animated" id="t4">
+                    <h3 style="color: rgb(0,0,0);">Team member 4</h3>
+                    <div class="form-row">
+                        <div class="col">
+                            <div class="form-group"><input class="form-control" type="text" style="background-color: rgb(255,255,255);" name="name4" required="" placeholder="*Full Name" minlength="3" maxlength="20" autocomplete="on"></div>
+                        </div>
+                        <div class="col">
+                            <div class="form-group"><input class="form-control" type="email" style="background-color: rgb(255,255,255);" name="email4" required="" placeholder="*Email" minlength="15" maxlength="30" autocomplete="on" inputmode="email"></div>
+                        </div>
                     </div>
-                    <div class="col"><small id="message" style="font-size: 20px;"></small></div>
-                </div>
-            </section>
-            <section class="rubberBand animated" id="t2">
-                <h3 style="color: rgb(0,0,0);">Team member 2</h3>
-                <div class="form-row">
-                    <div class="col">
-                        <div class="form-group"><input class="form-control" type="text" style="background-color: rgb(255,255,255);" name="name2" required="" placeholder="*Full Name" minlength="3" maxlength="20" autocomplete="on"></div>
+                    <div class="form-row">
+                        <div class="col">
+                            <div class="form-group"><input class="form-control" type="text" style="background-color: rgb(255,255,255);" name="mobile4" required="" placeholder="*Mobile" minlength="10" maxlength="15" pattern="(7|8|9)\d{9}" autocomplete="on"></div>
+                        </div>
+                        <div class="col">
+                            <div class="form-group"><input class="form-control" type="text" style="background-color: rgb(255,255,255);" name="college4" required="" placeholder="*College" minlength="10" maxlength="30" autocomplete="on"></div>
+                        </div>
                     </div>
-                    <div class="col">
-                        <div class="form-group"><input class="form-control" type="email" style="background-color: rgb(255,255,255);" name="email2" required="" placeholder="*Email" minlength="15" maxlength="30" autocomplete="on" inputmode="email"></div>
-                    </div>
-                </div>
-                <div class="form-row">
-                    <div class="col">
-                        <div class="form-group"><input class="form-control" type="text" style="background-color: rgb(255,255,255);" name="mobile2" required="" placeholder="*Mobile" minlength="10" maxlength="15" pattern="(7|8|9)\d{9}" autocomplete="on"></div>
-                    </div>
-                    <div class="col">
-                        <div class="form-group"><input class="form-control" type="text" style="background-color: rgb(255,255,255);" name="college2" required="" placeholder="*College" minlength="10" maxlength="30" autocomplete="on"></div>
-                    </div>
-                </div>
-            </section>
-            <section class="rubberBand animated" id="t3">
-                <h3 style="color: rgb(0,0,0);">Team member 3</h3>
-                <div class="form-row">
-                    <div class="col">
-                        <div class="form-group"><input class="form-control" type="text" style="background-color: rgb(255,255,255);" name="name3" required="" placeholder="*Full Name" minlength="3" maxlength="20" autocomplete="on"></div>
-                    </div>
-                    <div class="col">
-                        <div class="form-group"><input class="form-control" type="email" style="background-color: rgb(255,255,255);" name="email3" required="" placeholder="*Email" minlength="15" maxlength="30" autocomplete="on" inputmode="email"></div>
-                    </div>
-                </div>
-                <div class="form-row">
-                    <div class="col">
-                        <div class="form-group"><input class="form-control" type="text" style="background-color: rgb(255,255,255);" name="mobile3" required="" placeholder="*Mobile" minlength="10" maxlength="15" pattern="(7|8|9)\d{9}" autocomplete="on"></div>
-                    </div>
-                    <div class="col">
-                        <div class="form-group"><input class="form-control" type="text" style="background-color: rgb(255,255,255);" name="college3" required="" placeholder="*College" minlength="10" maxlength="30" autocomplete="on"></div>
-                    </div>
-                </div>
-            </section>
-            <section class="rubberBand animated" id="t4">
-                <h3 style="color: rgb(0,0,0);">Team member 4</h3>
-                <div class="form-row">
-                    <div class="col">
-                        <div class="form-group"><input class="form-control" type="text" style="background-color: rgb(255,255,255);" name="name4" required="" placeholder="*Full Name" minlength="3" maxlength="20" autocomplete="on"></div>
-                    </div>
-                    <div class="col">
-                        <div class="form-group"><input class="form-control" type="email" style="background-color: rgb(255,255,255);" name="email4" required="" placeholder="*Email" minlength="15" maxlength="30" autocomplete="on" inputmode="email"></div>
-                    </div>
-                </div>
-                <div class="form-row">
-                    <div class="col">
-                        <div class="form-group"><input class="form-control" type="text" style="background-color: rgb(255,255,255);" name="mobile4" required="" placeholder="*Mobile" minlength="10" maxlength="15" pattern="(7|8|9)\d{9}" autocomplete="on"></div>
-                    </div>
-                    <div class="col">
-                        <div class="form-group"><input class="form-control" type="text" style="background-color: rgb(255,255,255);" name="college4" required="" placeholder="*College" minlength="10" maxlength="30" autocomplete="on"></div>
-                    </div>
-                </div>
-            </section>
-            <div id="recaptcha-container"></div><button class="btn btn-primary" id="submit" type="submit" style="border: 2px solid red;color: red;background-color: rgba(0,0,0,0);">Register</button></form>
-    </section>
-    <footer class="text-center" style="font-family: Aldrich, sans-serif;max-height: 150px;width: 100%;padding: 10px;margin-bottom: 0px;background-position: bottom;">
-        <div class="social"><a href="https://www.instagram.com/hackerrupt._/"><i class="icon ion-social-instagram" style="font-size: 30px;"></i></a></div>
-        <ul class="list-inline">
-            <li class="list-inline-item"><a href="index.html">Home</a></li>
-            <li class="list-inline-item"><a href="contactus.html">Contact us</a></li>
-            <li class="list-inline-item"><a href="aboutACE.html">About us</a></li>
-            <li class="list-inline-item"><a href="register.html">Register</a></li>
-        </ul>
-        <p class="copyright" style="font-size: 20px;">Hackerrupt © 2020</p>
-    </footer>
+                </section>
+                <div id="recaptcha-container"></div><button class="btn btn-primary" id="submit" type="submit" style="border: none;color: white;background-color: rgb(255,0,0);">Register</button></form>
+        </section>
+        <footer class="text-center" style="font-family: Aldrich, sans-serif;max-height: 150px;width: 100%;padding: 10px;margin-bottom: 0px;background-position: bottom;">
+            <div class="social"><a href="https://www.instagram.com/hackerrupt._/"><i class="icon ion-social-instagram" style="color: white;font-size: 30px;"></i></a></div>
+            <ul class="list-inline">
+                <li class="list-inline-item"><a href="index.html">Home</a></li>
+                <li class="list-inline-item"><a href="contactus.html">Contact us</a></li>
+                <li class="list-inline-item"><a href="aboutACE.html">About us</a></li>
+                <li class="list-inline-item"><a href="register.html">Register</a></li>
+            </ul>
+            <p class="copyright" style="font-size: 20px;">Hackerrupt © 2020</p>
+        </footer>
+    </div><!-- #main-container -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.1.1/aos.js"></script>

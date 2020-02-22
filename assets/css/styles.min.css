@@ -1,1 +1,227 @@
-footer{background-color:#292c2f;box-shadow:0 1px 1px 0 rgba(0,0,0,.12);box-sizing:border-box;width:100%;text-align:center;font:700 16px sans-serif;padding:55px 50px;margin-top:80px;bottom:0;color:#fff}.fa.footer-contacts-icon,.social-links a{background-color:#33383b;text-align:center}.footer-navigation h3{margin:0 0 20px;font:400 36px Cookie,cursive;color:#fff}.footer-navigation h3 a{text-decoration:none;color:#fff}.footer-navigation h3 span{color:#5383d3}.footer-navigation p.links a{color:#fff;text-decoration:none}.footer-navigation p.company-name{color:#8f9296;font-size:14px;font-weight:400;margin-top:20px}@media (max-width:767px){.footer-contacts{margin:30px 0}}.footer-contacts p{display:inline-block;color:#fff;vertical-align:middle}.footer-contacts p a{color:#5383d3;text-decoration:none}.fa.footer-contacts-icon{color:#fff;font-size:18px;width:38px;height:38px;border-radius:50%;line-height:38px;margin:10px 15px 10px 0}span.new-line-span{display:block;font-weight:400;font-size:14px;line-height:2}.footer-about h4{display:block;color:#fff;font-size:14px;font-weight:700;margin-bottom:20px}.footer-about p{line-height:20px;color:#92999f;font-size:13px;font-weight:400;margin:0}div.social-links{margin-top:20px;color:#fff}.social-links a{display:inline-block;width:35px;height:35px;cursor:pointer;border-radius:2px;font-size:20px;color:#fff;line-height:35px;margin-right:5px;margin-bottom:5px}.timer-digit{color:red;font-weight:700;font-family:Aldrich}.form-control{border:2px solid red;color:red;background-color:#000}.team-boxed{color:#313437;background-color:#eef4f7}.team-boxed p{color:#7d8285}.team-boxed h2{font-weight:700;margin-bottom:40px;padding-top:40px;color:inherit}@media (max-width:767px){.team-boxed h2{margin-bottom:25px;padding-top:25px;font-size:24px}}.team-boxed .intro{font-size:16px;max-width:500px;margin:0 auto}.team-boxed .intro p{margin-bottom:0}.team-boxed .people{padding:50px 0}.team-boxed .item{text-align:center}.team-boxed .item .box{text-align:center;padding:30px;background-color:#fff;margin-bottom:30px}.team-boxed .item .name{font-weight:700;margin-top:28px;margin-bottom:8px;color:inherit}.team-boxed .item .title{text-transform:uppercase;font-weight:700;color:#d0d0d0;letter-spacing:2px;font-size:13px}.team-boxed .item .description{font-size:15px;margin-top:15px;margin-bottom:20px}.team-boxed .item img{max-width:160px}.team-boxed .social{font-size:18px;color:#a2a8ae}.team-boxed .social a{color:inherit;margin:0 10px;display:inline-block;opacity:.7}#demo,p{text-align:center;font-size:60px;margin-top:0}.team-boxed .social a:hover{opacity:1}#demo{color:red;font-family:Bangers,cursive}
+footer {
+    background-color: #292c2f;
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, .12);
+    box-sizing: border-box;
+    width: 100%;
+    text-align: center;
+    font: 700 16px sans-serif;
+    padding: 55px 50px;
+    /*margin-top: 80px;*/
+    bottom: 0;
+    color: #fff
+}
+
+.fa.footer-contacts-icon,
+.social-links a {
+    background-color: #33383b;
+    text-align: center
+}
+
+.footer-navigation h3 {
+    margin: 0 0 20px;
+    font: 400 36px Cookie, cursive;
+    color: #fff
+}
+
+.footer-navigation h3 a {
+    text-decoration: none;
+    color: #fff
+}
+
+.footer-navigation h3 span {
+    color: #5383d3
+}
+
+.footer-navigation p.links a {
+    color: #fff;
+    text-decoration: none
+}
+
+.footer-navigation p.company-name {
+    color: #8f9296;
+    font-size: 14px;
+    font-weight: 400;
+    margin-top: 20px
+}
+
+@media (max-width:767px) {
+    .footer-contacts {
+        margin: 30px 0
+    }
+}
+
+.footer-contacts p {
+    display: inline-block;
+    color: #fff;
+    vertical-align: middle
+}
+
+.footer-contacts p a {
+    color: #5383d3;
+    text-decoration: none
+}
+
+.fa.footer-contacts-icon {
+    color: #fff;
+    font-size: 18px;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    line-height: 38px;
+    margin: 10px 15px 10px 0
+}
+
+span.new-line-span {
+    display: block;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 2
+}
+
+.footer-about h4 {
+    display: block;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 700;
+    margin-bottom: 20px
+}
+
+.footer-about p {
+    line-height: 20px;
+    color: #92999f;
+    font-size: 13px;
+    font-weight: 400;
+    margin: 0
+}
+
+div.social-links {
+    margin-top: 20px;
+    color: #fff
+}
+
+.social-links a {
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+    border-radius: 2px;
+    font-size: 20px;
+    color: #fff;
+    line-height: 35px;
+    margin-right: 5px;
+    margin-bottom: 5px
+}
+
+.timer-digit {
+    color: red;
+    font-weight: 700;
+    font-family: Aldrich
+}
+
+.form-control {
+    /*border: 2px solid red;*/
+    /*color: red;*/
+    background-color: #000
+}
+
+.team-boxed {
+    color: #313437;
+    background-color: #eef4f7
+}
+
+.team-boxed p {
+    color: #7d8285
+}
+
+.team-boxed h2 {
+    font-weight: 700;
+    margin-bottom: 40px;
+    padding-top: 40px;
+    color: inherit
+}
+
+@media (max-width:767px) {
+    .team-boxed h2 {
+        margin-bottom: 25px;
+        padding-top: 25px;
+        font-size: 24px
+    }
+}
+
+.team-boxed .intro {
+    font-size: 16px;
+    max-width: 500px;
+    margin: 0 auto
+}
+
+.team-boxed .intro p {
+    margin-bottom: 0
+}
+
+.team-boxed .people {
+    padding: 50px 0
+}
+
+.team-boxed .item {
+    text-align: center
+}
+
+.team-boxed .item .box {
+    text-align: center;
+    padding: 30px;
+    background-color: #fff;
+    margin-bottom: 30px
+}
+
+.team-boxed .item .name {
+    font-weight: 700;
+    margin-top: 28px;
+    margin-bottom: 8px;
+    color: inherit
+}
+
+.team-boxed .item .title {
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #d0d0d0;
+    letter-spacing: 2px;
+    font-size: 13px
+}
+
+.team-boxed .item .description {
+    font-size: 15px;
+    margin-top: 15px;
+    margin-bottom: 20px
+}
+
+.team-boxed .item img {
+    max-width: 160px
+}
+
+.team-boxed .social {
+    font-size: 18px;
+    color: #a2a8ae
+}
+
+.team-boxed .social a {
+    color: inherit;
+    margin: 0 10px;
+    display: inline-block;
+    opacity: .7
+}
+
+#demo,
+p {
+    text-align: center;
+    font-size: 60px;
+    margin-top: 0
+}
+
+.team-boxed .social a:hover {
+    opacity: 1
+}
+
+#demo {
+    color: red;
+    font-family: Bangers, cursive
+}
