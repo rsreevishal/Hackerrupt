@@ -55,15 +55,15 @@ var firebaseConfig = {
 			  }
 		  }
 	  });
-	  $('#pass, #cpass').on('keyup', function () {
-			if ($('#pass').val() == $('#cpass').val()) {
-			  $('#message').html('Matching').css('color', 'green');
-			  $('#submit').attr('disabled',false);
-			} else {
-			  $('#message').html('Not Matching').css('color', 'red');
-			  $('#submit').attr('disabled',true);
-		  }
-	  });
+	  // $('#pass, #cpass').on('keyup', function () {
+		// 	if ($('#pass').val() == $('#cpass').val()) {
+		// 	  $('#message').html('Matching').css('color', 'green');
+		// 	  $('#submit').attr('disabled',false);
+		// 	} else {
+		// 	  $('#message').html('Not Matching').css('color', 'red');
+		// 	  $('#submit').attr('disabled',true);
+		//   }
+	  // });
   }
   if(document.getElementById('ab_link')) {
 	  $('#ab_link').on('click',(e)=>{
