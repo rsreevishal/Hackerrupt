@@ -65,11 +65,11 @@ var firebaseConfig = {
 		//   }
 	  // });
   }
-  if(document.getElementById('ab_link')) {
-	  $('#ab_link').on('click',(e)=>{
-		  alert('1. This field is optional\n2. This link should be a google drive link');
-	  });
-  }
+  //if(document.getElementById('ab_link')) {
+	 // $('#ab_link').on('click',(e)=>{
+	//	  alert('1. This field is optional\n2. This link should be a google drive link');
+	 // });
+ // }
   // if(document.getElementById('submit')) {
   // 	$('#submit').on('click',(e) => {
   //         if(verified) {
