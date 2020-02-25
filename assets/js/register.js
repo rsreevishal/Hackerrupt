@@ -11,7 +11,7 @@ var firebaseConfig = {
   firebase.initializeApp(firebaseConfig);
   firebase.analytics();
   firebase.auth().languageCode = 'en';
-  const db = firebase.firestore();
+  const DB = firebase.firestore();
   var verified = false;
   window.recaptchaVerifier = new firebase.auth.RecaptchaVerifier('recaptcha-container', {
 	'size': 'normal',
@@ -123,7 +123,7 @@ var firebaseConfig = {
   async function signUp(email, pass, data) {
 	  await firebase.auth().createUserWithEmailAndPassword(email, pass).then(cred => {
 		if (data) {
-		  return db.collection('users').doc(cred.user.uid).set(data).then(() => {
+		  return DB.collection('users').doc(cred.user.uid).set(data).then(() => {
 			  alert('Registered');
 			  window.location.href = "success.html";
 		  });
