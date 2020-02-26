@@ -9,6 +9,7 @@
   "author": "SREE VISHAL R",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "nodemailer": "^6.4.3"
   }
 }
