@@ -1,5 +1,6 @@
+const express = require('express');
 const nodemailer = require("nodemailer");
-
+const fs = require('fs');
 async function main(fromMail,toMail,sub,message) {
   let testAccount = await nodemailer.createTestAccount();
   console.log(testAccount.user);
@@ -25,7 +26,17 @@ async function main(fromMail,toMail,sub,message) {
   console.log("Preview URL: %s", nodemailer.getTestMessageUrl(info));
 }
 
-const html = "<body><h1 style='text-align:center;'>Hackerrupt 2k20</h1><p>Our review panel will review the ideas and get back to you.</p><p>Best regards<br/>Team Hackerrupt</p></body>";
 
-main('"Hackerrupt Team" <hackerrupt2k20@gmail.com>',"rsreevishal111@gmail.com","Hackerrupt\'20",html).catch(console.error);
+
+fs.readFile("./mailing.html",(err,data) => {
+  if(err)
+    console.log(err);
+  if(data){
+    const html = data;
+    main('"Hackerrupt Team" <hackerrupt2k20@gmail.com>',"rsreevishal111@gmail.com","Hackerrupt\'20",html).catch(console.error);
+  }
+});
+
+
+
 
