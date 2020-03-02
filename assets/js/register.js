@@ -125,7 +125,10 @@ var firebaseConfig = {
 	  await firebase.auth().createUserWithEmailAndPassword(email, pass).then(cred => {
 		if (data) {
 		  return DB.collection('users').doc(cred.user.uid).set(data).then(() => {
-			  alert('Registered');
+				alert('Registered');
+				$.post( "http://localhost:3000/mailto/", { email: email }, function(data){
+					console.log(data);
+				} );
 			  window.location.href = "success.html";
 		  });
 		}
