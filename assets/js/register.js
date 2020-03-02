@@ -115,7 +115,8 @@ var firebaseConfig = {
   $('#submit').on('click',function() {
 	  if(verified) {
 		  var res = JSON.stringify($('#myForm').serializeObject());
-		  var data = JSON.parse(res);
+			var data = JSON.parse(res);
+			document.getElementById("submit").disabled = true;
 		  signUp(data.email,data.password,data);
 	  }
   });
