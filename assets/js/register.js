@@ -25,11 +25,28 @@ var firebaseConfig = {
 	window.recaptchaWidgetId = widgetId;
   });
   if(document.getElementById('t1')) {
+		if(document.getElementById("absum").value.length < 10){
+			document.getElementById("submit").disabled = true;
+		}
+		$("#absum").on('keyup',()=>{
+			if(document.getElementById("absum").value.length < 10){
+				document.getElementById("submit").disabled = true;
+			}else{
+				document.getElementById("submit").disabled = false;
+			}
+		});
 	  $("#t2").css("display","none");
 	  $("#t3").css("display","none");
 	  $("#t4").css("display","none");
 	  $('#team_no').on('keyup change',(e)=>{
 		  switch(e.target.value) {
+				case '':
+				case '1': {
+					$("#t2").css("display","none");
+					$("#t3").css("display","none");
+					$("#t4").css("display","none");
+					break;
+				}
 			  case '2': {
 				  $("#t2").css("display","block");
 				  $("#t3").css("display","none");
@@ -49,9 +66,8 @@ var firebaseConfig = {
 				  break;
 			  }
 			  default: {
-				  $("#t2").css("display","none");
-				  $("#t3").css("display","none");
-				  $("#t4").css("display","none");
+					alert('no more than 4 members allowed');
+					document.getElementById("submit").disabled = true;
 			  }
 		  }
 	  });
@@ -63,7 +79,8 @@ var firebaseConfig = {
 			  $('#message').html('Not Matching').css('color', 'red');
 			  $('#submit').attr('disabled',true);
 		  }
-	  });
+		});
+		
   }
   //if(document.getElementById('ab_link')) {
 	 // $('#ab_link').on('click',(e)=>{
