@@ -72,7 +72,7 @@ var firebaseConfig = {
 		  }
 	  });
 	  $('#pass, #cpass').on('keyup', function () {
-			if (($('#pass').val() == $('#cpass').val()) and (document.getElementById("pass").value.length >= 8) and (verified)) {
+			if (($('#pass').val() == $('#cpass').val()) and (document.getElementById("pass").value.length >= 8)) {
 			  $('#message').html('Matching').css('color', 'green');
 			  $('#submit').attr('disabled',false);
 			} else {
@@ -130,12 +130,17 @@ var firebaseConfig = {
   
   
   $('#submit').on('click',function() {
-	  if(verified) {
+	  if((verified) and (document.getElementById("pass").value.length >= 8)) {
 		  var res = JSON.stringify($('#myForm').serializeObject());
 			var data = JSON.parse(res);
 			document.getElementById("submit").disabled = true;
 			var pass = document.getElementById("pass").value;
 		  signUp(data.email,pass,data);
+	  } else if(verified) {
+	  	alert("Check the password to be minimum of 8 chars");
+	  }
+	  else{
+	  	alert("Verify recaptcha");
 	  }
   });
   
