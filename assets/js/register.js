@@ -72,7 +72,7 @@ var firebaseConfig = {
 		  }
 	  });
 	  $('#pass, #cpass').on('keyup', function () {
-			if ($('#pass').val() == $('#cpass').val()) {
+			if ($('#pass').val() == $('#cpass').val() and (document.getElementById("pass").value.length >= 8)) {
 			  $('#message').html('Matching').css('color', 'green');
 			  $('#submit').attr('disabled',false);
 			} else {
