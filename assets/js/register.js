@@ -25,7 +25,7 @@ var firebaseConfig = {
 	window.recaptchaWidgetId = widgetId;
   });
   if(document.getElementById('t1')) {
-		if(document.getElementById("absum").value.length < 10){
+		if(document.getElementById("absum").value.length < 100){
 			document.getElementById("submit").disabled = true;
 		}
 		$("#absum").on('keyup',()=>{
@@ -72,7 +72,7 @@ var firebaseConfig = {
 		  }
 	  });
 	  $('#pass, #cpass').on('keyup', function () {
-			if (($('#pass').val() == $('#cpass').val()) and (document.getElementById("pass").value.length >= 8)) {
+			if ($('#pass').val() == $('#cpass').val()) {
 			  $('#message').html('Matching').css('color', 'green');
 			  $('#submit').attr('disabled',false);
 			} else {
