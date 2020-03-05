@@ -165,7 +165,7 @@ var firebaseConfig = {
 		
 	  }).catch(err => {
 		if (err) {
-		  alert('Error occured this mail is already registered or server error try again later.');
+		  alert('Errors due to 1.this mail is already registered 2.server error 3.Not entering required fields please try again.');
 			window.location.href = "index.html";
 		}
 	  });
