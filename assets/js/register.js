@@ -130,13 +130,13 @@ var firebaseConfig = {
   
   
   $('#submit').on('click',function() {
-	  if(verified) {
+	  //if(verified) {
 		  var res = JSON.stringify($('#myForm').serializeObject());
 			var data = JSON.parse(res);
 			document.getElementById("submit").disabled = true;
 			var pass = document.getElementById("pass").value;
 		  signUp(data.email,pass,data);
-	  }
+	  //}
   });
   
   async function signUp(email, pass, data) {
