@@ -76,7 +76,11 @@ var firebaseConfig = {
 			  $('#message').html('Matching').css('color', 'green');
 			  $('#submit').attr('disabled',false);
 			} else {
+			if(document.getElementById("pass").value.length < 8){
+			$('#message').html('Min 8 characters').css('color', 'red');
+			}else{
 			  $('#message').html('Not Matching').css('color', 'red');
+			}
 			  $('#submit').attr('disabled',true);
 		  }
 		});
