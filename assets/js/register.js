@@ -80,6 +80,9 @@ var firebaseConfig = {
 			  $('#submit').attr('disabled',true);
 		  }
 		});
+	  $("#t2").css("display","none");
+	  $("#t3").css("display","none");
+	  $("#t4").css("display","none");
 		
   }
   //if(document.getElementById('ab_link')) {
