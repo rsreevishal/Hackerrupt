@@ -10,7 +10,7 @@ from email.mime.text import MIMEText
 email_user = 'acesvce20@gmail.com'
 email_password = 'ace@svce'
 
-emailArray=['jakekallarackal@gmail.com']
+emailArray=['mahammadkaif4564@gmail.com','mahammadkaif456@gmail.com','raghavshankar.v@gmail.com','abiwaqas.cs18@bitsathy.ac.in','madhanbalaji2000@gmail.com']
 iterationLength=len(emailArray)
 
 for i in range(0,iterationLength):
