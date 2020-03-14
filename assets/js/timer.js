@@ -1,5 +1,5 @@
 if(document.getElementById("timer-days")) {
-	var countDownDate = new Date("Mar 14 2020 12:00:00").getTime();
+	var countDownDate = new Date("Mar 15 2020 11:00:00").getTime();
 	var x = setInterval(function() {
 		var now = new Date().getTime();
 		var distance = countDownDate - now;
